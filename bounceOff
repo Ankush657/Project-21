@@ -1,0 +1,36 @@
+function bounceOff(object1, object2) {
+     if ( object2.y - object1.y < object2.height/2 + object1.height/2) {
+        object1.bounceOff(object2);
+        
+      }
+   
+  }
+
+   bounceOff(movingBox,box1);
+    bounceOff(movingBox,box2);
+    bounceOff(movingBox,box3);
+    bounceOff(movingBox,box4);
+
+    if (movingBox.isTouching(box1)) {
+        movingBox.shapeColor = "green";
+    } else {
+        movingBox.shapeColor = "orange";
+    }
+
+    if (movingBox.isTouching(box2)) {
+        movingBox.shapeColor = "purple";
+    } else {
+        movingBox.shapeColor = "orange";
+    }
+
+    if (movingBox.isTouching(box3)) {
+        movingBox.shapeColor = "yellow";
+    } else {
+        movingBox.shapeColor = "orange";
+    }
+
+    if (movingBox.isTouching(box4)) {
+        movingBox.shapeColor = "red";
+    } else {
+        movingBox.shapeColor = "orange";
+    }
